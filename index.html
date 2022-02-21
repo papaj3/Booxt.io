@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>DeeKey.io</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/fullpage.css">
+  <script src="JS/fullpage.js">
+
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="nav_bar">
+      <h2 class="logo">DeeKey.io</h2>
+      <ul class="nav_links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#" class="btn">Join Us</a></li>
+      </ul>
+
+    </nav>
+  </header>
+  <div id="fullpage">
+    <div class="section">Section 1</div>
+    <div class="section">
+        <div class="slide">Slide 2.1</div>
+        <div class="slide">Slide 2.2</div>
+        <div class="slide">Slide 2.3</div>
+    </div>
+    <div class="section">Section 3</div>
+</div>
+
+<script type="text/javascript">
+new fullpage('#fullpage', {
+    navigation: true,
+    responsiveWidth: 700,
+    anchors: ['home', 'about-us', 'contact'],
+    parallax: true,
+    onLeave: function(origin, destination, direction){
+        console.log("Leaving section" + origin.index);
+    },
+});
+</script>
+
+
+
+
+</body>
+
+</html>
