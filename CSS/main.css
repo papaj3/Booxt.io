@@ -21,6 +21,9 @@ header {
   width: 100%;
 }
 
+.section {
+  background-color: var(--primary-color);
+}
 .nav_bar {
   display: flex;
   justify-content: space-between;
