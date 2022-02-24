@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Booxt.io</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="CSS/fullpage.css" />
+		<link rel="stylesheet" href="CSS/main.css" />
+		<script src="JS/fullpage.js"></script>
+	</head>
+	<body>
+		<header class="nav">
+			<div class="brand">
+				<h1>Booxt.io</h1>
+			</div>
+			<nav>
+				<ul class="nav_wrapper">
+					<li><a href="">Home</a></li>
+					<li><a href="">Who We Are</a></li>
+					<li><a href="">What We Do</a></li>
+					<li><a href="">Roadmap</a></li>
+					<li><a href="">Purpose</a></li>
+				</ul>
+			</nav>
+			<div class="social_nav_links">
+				<ul>
+					<li><a href=""><i class="fab fa-discord nav_link"></a></i></li>
+					<li><a href=""><i class="fa-brands fa-facebook-square"></i></a></li>
+					<li><a href=""><i class="fa-brands fa-instagram-square"></i></a></li>
+					<li><a href=""><i class="fa-brands fa-twitter-square"></i></a></li>
+				</ul>
+			</div>
+		</header>
+		<div id="fullpage">
+			<section class="section">
+				<div class="hero">
+					<div class="header_grid">
+						<div class="header_text">
+							<h1 class="m_b_1">
+								The Future of<br />
+								Lootcrates & Mystery Boxes
+							</h1>
+							<p>Bringing unique items and NFTs to the Metaverse!</p>
+							<a href="" class="btn">
+								<i class="fab fa-discord"></i> Discord
+							</a>
+						</div>
+						<div class="header_img">
+							<img
+								src="https://imageio.forbes.com/specials-images/imageserve/6170e01f8d7639b95a7f2eeb/Sotheby-s-NFT-Natively-Digital-1-2-sale-Bored-Ape-Yacht-Club--8817-by-Yuga-Labs/0x0.png?fit=bounds&format=png&width=960"
+								style="width: 300px"
+								alt=""
+							/>
+						</div>
+					</div>
+				</div>
+				<script>
+					(function () {
+						// Add event listener
+						document.addEventListener("mousemove", hero);
+						const elem = document.querySelector(".hero");
+						// Magic happens here
+						function hero(e) {
+							let _w = window.innerWidth / 2;
+							let _h = window.innerHeight / 2;
+							let _mouseX = e.clientX;
+							let _mouseY = e.clientY;
+							let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${
+								50 - (_mouseY - _h) * 0.01
+							}%`;
+							let _depth2 = `${50 - (_mouseX - _w) * 0.01}% ${
+								50 - (_mouseY - _h) * 0.01
+							}%`;
+							let _depth3 = `${50 - (_mouseX - _w) * 0.01}% ${
+								50 - (_mouseY - _h) * 0.01
+							}%`;
+							let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+							console.log(x);
+							elem.style.backgroundPosition = x;
+						}
+					})();
+				</script>
+			</section>
+			<section class="section">
+				<div class="section_header">
+					<h1>Road Map</h1>
+				</div>
+
+				<div class="grid_container">
+					<div class="item">
+						<h1>Lorem ipsum dolor sit amet.</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+							asperiores, deleniti dolorum quasi enim debitis! Lorem ipsum dolor
+							sit amet consectetur adipisicing elit. Voluptas asperiores,
+							deleniti dolorum quasi enim debitis!
+						</p>
+					</div>
+					<div class="item">
+						<h1>Lorem ipsum dolor sit amet.</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+							asperiores, deleniti dolorum quasi enim debitis! Lorem ipsum dolor
+							sit amet consectetur adipisicing elit. Voluptas asperiores,
+							deleniti dolorum quasi enim debitis!
+						</p>
+					</div>
+					<div class="item">
+						<h1>Lorem ipsum dolor sit amet.</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+							corrupti nulla, consequuntur quisquam libero minus rem minima
+							veritatis aperiam odio quia et doloribus dignissimos, accusantium,
+							nisi quas ullam quae rerum saepe? Iure ipsum animi et eveniet
+							nihil veritatis consequatur ullam, cumque amet aperiam velit harum
+							numquam vitae vero eos dolores! Lorem ipsum, dolor sit amet
+							consectetur adipisicing elit. Omnis eum temporibus aspernatur
+							asperiores error assumenda facilis explicabo quas odit excepturi.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+							asperiores, deleniti dolorum quasi enim debitis! Lorem ipsum dolor
+							sit amet consectetur adipisicing elit. Voluptas asperiores,
+							deleniti dolorum quasi enim debitis!
+						</p>
+					</div>
+					<div class="item">
+						<h1>Lorem ipsum dolor sit amet.</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+							asperiores, deleniti dolorum quasi enim debitis! Lorem ipsum dolor
+							sit amet consectetur adipisicing elit. Voluptas asperiores,
+							deleniti dolorum quasi enim debitis!
+						</p>
+					</div>
+					<div class="item">
+						<h1>Lorem ipsum dolor sit amet.</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+							asperiores, deleniti dolorum quasi enim debitis! Lorem ipsum dolor
+							sit amet consectetur adipisicing elit. Voluptas asperiores,
+							deleniti dolorum quasi enim debitis!
+						</p>
+					</div>
+				</div>
+			</section>
+			<!--<section>
+			<div class="section_header">
+				<h1>Lorem, ipsum dolor.</h1>
+			</div>
+			<div class="flex_container">
+				<div class="flex_item">
+					<h1>Lorem ipsum dolor sit amet.</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+						dolorum illum quis doloremque architecto officia exercitationem
+						totam, cum qui temporibus?
+					</p>
+				</div>
+				<div class="flex_item">
+					<h1>Lorem ipsum dolor sit amet.</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+						dolorum illum quis doloremque architecto officia exercitationem
+						totam, cum qui temporibus?
+					</p>
+				</div>
+				<div class="flex_item">
+					<h1>Lorem ipsum dolor sit amet.</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+						dolorum illum quis doloremque architecto officia exercitationem
+						totam, cum qui temporibus?
+					</p>
+				</div>
+				<div class="flex_item">
+					<h1>Lorem ipsum dolor sit amet.</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+						dolorum illum quis doloremque architecto officia exercitationem
+						totam, cum qui temporibus?
+					</p>
+				</div>
+				<div class="flex_item">
+					<h1>Lorem ipsum dolor sit amet.</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+						dolorum illum quis doloremque architecto officia exercitationem
+						totam, cum qui temporibus?
+					</p>
+				</div>
+			</div>
+		</section>-->
+			<script type="text/javascript">
+				new fullpage("#fullpage", {
+					navigation: true,
+					responsiveWidth: 700,
+					anchors: ["home", "about-us", "contact"],
+					parallax: true,
+					onLeave: function (origin, destination, direction) {
+						console.log("Leaving section" + origin.index);
+					},
+				});
+			</script>
+		</div>
+	</body>
+</html>
