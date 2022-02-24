@@ -162,11 +162,13 @@ p, a {
     display: flex;
     justify-content: space-between;
     color: var(--primary-font-color);
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
     align-items: center;
     line-height: 2;
-}
+    position: fixed;
+    z-index: 1;
+    padding: 0px 10%;
+  }
 
 .nav_wrapper {
     display: flex;
