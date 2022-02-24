@@ -138,6 +138,12 @@ p, a {
     -moz-box-shadow: 0px 0px 100px 100px #000000; /* Firefox */
    box-shadow: 0px 0px 100px 100px #000000; /* Standard */
    justify-self: end;
+   background-image: url(https://imageio.forbes.com/specials-images/imageserve/6170e01f8d7639b95a7f2eeb/Sotheby-s-NFT-Natively-Digital-1-2-sale-Bored-Ape-Yacht-Club--8817-by-Yuga-Labs/0x0.png?fit=bounds&format=png&width=960);
+   background-size: cover;
+   background-position: center;
+   height: 32vh; 
+    width: 300px;
+    border-radius: 4px;
 }
 
 @media (max-width: 50em) {
