@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Booxt.io</title>
+		<title>Boxxt.io</title>
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -16,7 +16,7 @@
 	<body>
 		<header class="nav">
 			<div class="brand">
-				<h1>Booxt.io</h1>
+				<h1>Boxxt.io</h1>
 			</div>
 			<nav>
 				<ul class="nav_wrapper">
@@ -63,30 +63,25 @@
 					<a href='https://www.freepik.com/vectors/neon-city' class="invisible">Neon city vector created by vectorpocket - www.freepik.com</a>
 				</div>
 				<script>
-					(function () {
-						// Add event listener
-						document.addEventListener("mousemove", hero);
-						const elem = document.querySelector(".hero");
-						// Magic happens here
-						function hero(e) {
-							let _w = window.innerWidth / 2;
-							let _h = window.innerHeight / 2;
-							let _mouseX = e.clientX;
-							let _mouseY = e.clientY;
-							let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${
-								50 - (_mouseY - _h) * 0.01
-							}%`;
-							let _depth2 = `${50 - (_mouseX - _w) * 0.01}% ${
-								50 - (_mouseY - _h) * 0.01
-							}%`;
-							let _depth3 = `${50 - (_mouseX - _w) * 0.01}% ${
-								50 - (_mouseY - _h) * 0.01
-							}%`;
-							let x = `${_depth3}, ${_depth2}, ${_depth1}`;
-							console.log(x);
-							elem.style.backgroundPosition = x;
-						}
-					})();
+					(function() {
+    // Add event listener
+    document.addEventListener("mousemove", parallax);
+    const elem = document.querySelector(".hero");
+    // Magic happens here
+    function parallax(e) {
+        let _w = window.innerWidth/2;
+        let _h = window.innerHeight/2;
+        let _mouseX = e.clientX;
+        let _mouseY = e.clientY;
+        let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.05}%`;
+        let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.05}%`;
+        let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
+        let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+        console.log(x);
+        elem.style.backgroundPosition = x;
+    }
+
+})();
 				</script>
 			</section>
 			<section class="section">
@@ -171,6 +166,7 @@
 					<a href='https://www.freepik.com/vectors/background' class="invisible">Background vector created by freepik - www.freepik.com</a>
 				</div>
 			</section>
+			
 			<!--<section>
 			<div class="section_header">
 				<h1>Lorem, ipsum dolor.</h1>
