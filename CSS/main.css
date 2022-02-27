@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
 
 /*////////////\\\\\\\\\\*/
@@ -13,19 +14,24 @@
     --primary-color: #262322;
     --secondary-color: #5448C8;
     --primary-font-color: #FFFBFF;
-  }
+}
 
 body {
     background-color: var(--primary-color);
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     color: var(--secondary-color);
     font-family: 'Roboto', sans-serif;
-    
+
 }
 
-p, a {
+p,
+a {
     color: var(--primary-font-color);
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
@@ -63,18 +69,22 @@ p, a {
     width: 95%;
     margin: 0 auto;
 }
+
 .item {
     padding: 2em;
     border-radius: 0.5rem;
     border: 2px solid var(--secondary-color);
     margin-bottom: 1rem;
 }
+
 .item:nth-child(1) {
     grid-column: span 2;
 }
+
 .item:nth-child(5) {
     grid-column: span 2;
 }
+
 .item:nth-child(3) {
     grid-row-end: span 2;
 }
@@ -92,6 +102,7 @@ p, a {
     margin: 0 auto;
     margin-bottom: 1.5rem;
 }
+
 .flex_item {
     flex: 1;
     border: 2px solid red;
@@ -110,7 +121,7 @@ p, a {
     width: 100%;
     background-size: cover;
     background-position: center;
-    box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.3 );
+    box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.3);
 
 }
 
@@ -130,8 +141,8 @@ p, a {
 .header_text {
     padding: 2em;
     border-radius: 0.5rem;
-   justify-self: center;
-   line-height: 1.5;
+    justify-self: center;
+    line-height: 1.5;
 }
 
 .header_text h1 {
@@ -172,7 +183,7 @@ p, a {
     position: fixed;
     z-index: 1;
     padding: 0px 10%;
-  }
+}
 
 .nav_wrapper {
     display: flex;
@@ -200,8 +211,9 @@ p, a {
     height: 100vh;
     background-size: cover;
     background-position: center;
-    box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.3 );
+    box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.3);
 }
+
 .team_grid_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -209,8 +221,8 @@ p, a {
     margin: 0 auto;
     gap: 1.25rem;
     text-align: center;
-    justify-content: center; 
-    align-content: center;   
+    justify-content: center;
+    align-content: center;
 }
 
 .team_grid_items {
@@ -264,35 +276,43 @@ i {
     .header_grid {
         width: 80%;
         display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    height: 100%;
-    margin: 0 auto;
-    padding: 1em;
-    border-radius: 0.5rem;
-    text-align: center;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        height: 100%;
+        margin: 0 auto;
+        padding: 1em;
+        border-radius: 0.5rem;
+        text-align: center;
     }
+
     .header_text {
         box-shadow: inset 0px 0px 40px 40px #161615;
         padding: 2em;
         border-radius: 0.5rem;
-        -webkit-box-shadow: 0px 0px 100px 100px #000000; /* WebKit */
-        -moz-box-shadow: 0px 0px 100px 100px #000000; /* Firefox */
-       box-shadow: 0px 0px 100px 100px #000000; /* Standard */
-       justify-self: start;
-       line-height: 1.5;
+        -webkit-box-shadow: 0px 0px 100px 100px #000000;
+        /* WebKit */
+        -moz-box-shadow: 0px 0px 100px 100px #000000;
+        /* Firefox */
+        box-shadow: 0px 0px 100px 100px #000000;
+        /* Standard */
+        justify-self: start;
+        line-height: 1.5;
     }
+
     .header_img {
-        -webkit-box-shadow: 0px 0px 100px 100px #000000; /* WebKit */
-        -moz-box-shadow: 0px 0px 100px 100px #000000; /* Firefox */
-       box-shadow: 0px 0px 100px 100px #000000; /* Standard */
-       justify-self: end;
-       background-image: url(https://imageio.forbes.com/specials-images/imageserve/6170e01f8d7639b95a7f2eeb/Sotheby-s-NFT-Natively-Digital-1-2-sale-Bored-Ape-Yacht-Club--8817-by-Yuga-Labs/0x0.png?fit=bounds&format=png&width=960);
-       background-size: cover;
-       background-position: center;
-       height: 32vh; 
+        -webkit-box-shadow: 0px 0px 100px 100px #000000;
+        /* WebKit */
+        -moz-box-shadow: 0px 0px 100px 100px #000000;
+        /* Firefox */
+        box-shadow: 0px 0px 100px 100px #000000;
+        /* Standard */
+        justify-self: end;
+        background-image: url(https://imageio.forbes.com/specials-images/imageserve/6170e01f8d7639b95a7f2eeb/Sotheby-s-NFT-Natively-Digital-1-2-sale-Bored-Ape-Yacht-Club--8817-by-Yuga-Labs/0x0.png?fit=bounds&format=png&width=960);
+        background-size: cover;
+        background-position: center;
+        height: 32vh;
         width: 300px;
         border-radius: 4px;
     }
@@ -308,7 +328,41 @@ i {
         width: 95%;
         margin-top: 1.5rem;
     }
+
     .nav {
         visibility: hidden;
     }
+}
+
+
+.nft_header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 3rem;
+    
+}
+
+.nft_header h1 {
+    font-size: 3rem;
+    color: var(--primary-font-color);
+}
+
+.nft_buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.nft_btn {
+    display: block;
+    border: solid 2px var(--secondary-color);
+    border-radius: 4px;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-font-color);
+    font-weight: 500;
+    font-size: 2rem;
+    margin-top: 4rem;
 }

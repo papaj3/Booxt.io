@@ -10,8 +10,23 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
 		/>
 		<link rel="stylesheet" href="CSS/fullpage.css" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 		<link rel="stylesheet" href="CSS/main.css" />
 		<script src="JS/fullpage.js"></script>
+		<script src="JS/fullpage.extensions.min.js"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<style>
+		.swiper {
+			width: 100%;
+			height: 350px;
+		}
+
+
+		.nft-img {
+			width: 100%;
+			height: 100%;
+		}
+	</style>
 	</head>
 	<body>
 		<header class="nav">
@@ -62,27 +77,6 @@
 					</div>
 					<a href='https://www.freepik.com/vectors/neon-city' class="invisible">Neon city vector created by vectorpocket - www.freepik.com</a>
 				</div>
-				<script>
-					(function() {
-    // Add event listener
-    document.addEventListener("mousemove", parallax);
-    const elem = document.querySelector(".hero");
-    // Magic happens here
-    function parallax(e) {
-        let _w = window.innerWidth/2;
-        let _h = window.innerHeight/2;
-        let _mouseX = e.clientX;
-        let _mouseY = e.clientY;
-        let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.05}%`;
-        let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.05}%`;
-        let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
-        let x = `${_depth3}, ${_depth2}, ${_depth1}`;
-        console.log(x);
-        elem.style.backgroundPosition = x;
-    }
-
-})();
-				</script>
 			</section>
 			<section class="section">
 				<div class="section_header">
@@ -214,6 +208,66 @@
 				</div>
 			</div>
 		</section>-->
+		<section class="section">
+			<div class="nft_header">
+				<h1>Box<span style="color:#5448C8;">X</span>t NFT's</h1>
+			</div>
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide"><img src="https://themetakongz.com/_img/nft_konz_1.png" class="nft-img" alt="">
+					</div>
+					<div class="swiper-slide"><img src="https://themetakongz.com/_img/nft_konz_1.png" class="nft-img" alt=""></div>
+					<div class="swiper-slide"><img src="https://themetakongz.com/_img/nft_konz_1.png" class="nft-img" alt=""></div>
+					<div class="swiper-slide"><img src="https://themetakongz.com/_img/nft_konz_1.png" class="nft-img" alt=""></div>
+					<div class="swiper-slide"><img src="https://themetakongz.com/_img/nft_konz_1.png" class="nft-img" alt=""></div>
+					<div class="swiper-slide"><img src="https://themetakongz.com/_img/nft_konz_1.png" class="nft-img" alt=""></div>
+				</div>
+			</div>
+			<div class="nft_buttons">
+				<a href="" class="nft_btn">
+					OpenSea
+				</a>
+			</div>
+			<script>
+				const swiper = new Swiper(".swiper", {
+					// Optional parameters
+					loop: true,
+					slidesPerView: 5.5,
+					rewind: true,
+					centeredSlides: true,
+					speed: 1500,
+					freeMode: {
+		enabled: true,
+		
+	  },
+					autoplay: {
+						delay: 0,
+						disableOnInteraction: false,
+					},
+	
+					breakpoints: {
+					   400: {
+						slidesPerView: 1,
+						 spaceBetween: 10,
+					   },
+					   640: {
+						 slidesPerView: 2,
+						 spaceBetween: 20,
+					   },
+					   768: {
+						 slidesPerView: 3,
+						 spaceBetween: 20,
+					   },
+					   1024: {
+						 slidesPerView: 5.5,
+						 spaceBetween: 0,
+					   },
+					},
+				});
+			</script>
+		</section>
 			<script type="text/javascript">
 				new fullpage("#fullpage", {
 					navigation: true,
