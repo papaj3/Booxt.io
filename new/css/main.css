@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+p,
+a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+/*////////////\\\\\\\\\\*/
+/*//////////// HEADER SECTION START \\\\\\\\\\*/
+/*////////////\\\\\\\\\\*/
+
+.header {
+    background-image: url(../img/3163.svg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    justify-items: center;
+    align-content: center;
+    color: #FFFBFF;
+    line-height: 1.5;
+}
+
+.hero-img-1 {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    opacity: 0.8;
+}
+
+.hero-img-2 {
+    position: absolute;
+    bottom: 0;
+    right: 45%;
+    opacity: 0.8;
+}
+
+.hero-btn {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.btn {
+    display: block;
+    border: solid 2px #5448C8;
+    border-radius: 4px;
+    padding: .5em;
+    text-align: center;
+    background-color: #5448C8;
+    color: #FFFBFF;
+    font-weight: 600;
+    max-width: 10em;
+}
+
+@media (max-width: 50em) {
+    .hero {
+        grid-template-columns: 1fr;
+        width: 90%;
+        height: 90vh;
+        margin: 0 auto;
+        justify-items: center;
+        align-content: center;
+    }
+
+    .hero-text {
+        color: white;
+        text-align: center;
+    }
+
+    .hero-img-1 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    .hero-img-2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+/*////////////\\\\\\\\\\*/
+/*//////////// HEADER SECTION END \\\\\\\\\\*/
+/*////////////\\\\\\\\\\*/
+
+
+/*////////////\\\\\\\\\\*/
+/*//////////// EXPERIENCE SECTION START \\\\\\\\\\*/
+/*////////////\\\\\\\\\\*/
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.experience-header {
+    grid-column: span 4;
+    text-align: center;
+}
+
+.unbox-text {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.mint-text {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.boxes-demo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.text1 {
+    text-align: center;
+}
+
+.text2 {
+    text-align: center;
+}
+
+.unbox-demo {
+    grid-column: span 2;
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+.mint-demo {
+    grid-column: span 2;
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+@media (max-width: 50rem) {
+    .experience-grid {
+        display: block;
+    }
+
+    .unbox-text {
+        margin-bottom: 1rem;
+    }
+
+    .boxes-demo {
+        grid-template-columns: 1fr;
+    }
+
+    .text2 {
+        grid-row: 3;
+    }
+
+}
+
+/*////////////\\\\\\\\\\*/
+/*//////////// EXPERIENCE SECTION END \\\\\\\\\\*/
+/*////////////\\\\\\\\\\*/
+
+/*////////////\\\\\\\\\\*/
+/*//////////// OWNERSHIP SECTION START \\\\\\\\\\*/
+/*////////////\\\\\\\\\\*/
+.ownership {
+    position: relative;
+}
+
+.ownership-flex {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    gap: 1rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+@media (max-width: 50rem) {
+    .ownership-flex {
+        display: block;
+    }
+}
+
+/*////////////\\\\\\\\\\*/
+/*//////////// OWNERSHIP SECTION END \\\\\\\\\\*/
+/*////////////\\\\\\\\\\*/

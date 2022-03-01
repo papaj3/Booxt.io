@@ -63,11 +63,19 @@ a {
 /*////////////\\\\\\\\\\*/
 
 .grid_container {
-    display: block;
+    /*display: block;*/
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 70%;
+
     gap: 1.5rem;
     padding-block: 2rem;
-    width: 95%;
+    /*width: 95%;*/
     margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 .item {
@@ -75,39 +83,78 @@ a {
     border-radius: 0.5rem;
     border: 2px solid var(--secondary-color);
     margin-bottom: 1rem;
+    height: 100%;
+    
 }
 
-.item:nth-child(1) {
-    grid-column: span 2;
-}
-
-.item:nth-child(5) {
-    grid-column: span 2;
+.item:nth-child(2) {
+    grid-column: span 3;
 }
 
 .item:nth-child(3) {
-    grid-row-end: span 2;
+    grid-column: span 3;
 }
 
+@media (max-width: 70em) {
+    .grid_container{
+        display: block;
+        width: 95%;
+    }
+}
+
+
 /*////////////\\\\\\\\\\*/
-/*//////////// RANDOM FLEX SECTION \\\\\\\\\\*/
+/*//////////// ABOUT SECTION \\\\\\\\\\*/
 /*////////////\\\\\\\\\\*/
 
-.flex_container {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
+.about_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
     margin: 0 auto;
-    margin-bottom: 1.5rem;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    gap: 1rem;
+    line-height: 1.5;
 }
 
-.flex_item {
-    flex: 1;
-    border: 2px solid red;
-    padding: 1em;
-    border-radius: 0.5rem;
+.about_header{
+    grid-column: span 2;
+    
+    margin-bottom: 2rem;
+}
+
+.ownership_title{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.ownership_flex {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    gap: 1rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.box {
+    width: 80%;
+    padding: 1.5rem;
+    background-color: var(--primary-font-color);
+    border-radius: 10px;;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.box h3 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.box p {
+    color: black;
 }
 
 /*////////////\\\\\\\\\\*/
@@ -169,6 +216,54 @@ a {
     margin-top: 1.5rem;
 }
 
+@media (min-width: 50em) {
+    
+
+    .header_grid {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        height: 100%;
+        margin: 0 auto;
+        padding: 1em;
+        border-radius: 0.5rem;
+        text-align: center;
+    }
+
+    .header_text {
+        box-shadow: inset 0px 0px 40px 40px #161615;
+        padding: 2em;
+        border-radius: 0.5rem;
+        -webkit-box-shadow: 0px 0px 100px 100px #000000;
+        /* WebKit */
+        -moz-box-shadow: 0px 0px 100px 100px #000000;
+        /* Firefox */
+        box-shadow: 0px 0px 100px 100px #000000;
+        /* Standard */
+        justify-self: start;
+        line-height: 1.5;
+    }
+
+    .header_img {
+        -webkit-box-shadow: 0px 0px 100px 100px #000000;
+        /* WebKit */
+        -moz-box-shadow: 0px 0px 100px 100px #000000;
+        /* Firefox */
+        box-shadow: 0px 0px 100px 100px #000000;
+        /* Standard */
+        justify-self: end;
+        background-image: url(../IMG/NFTs/DevilTransparent.png);
+        background-size: cover;
+        background-position: center;
+        height: 32vh;
+        width: 300px;
+        border-radius: 4px;
+    }
+}
+
 /*////////////\\\\\\\\\\*/
 /*//////////// NAVIGATION SECTION \\\\\\\\\\*/
 /*////////////\\\\\\\\\\*/
@@ -217,7 +312,7 @@ a {
 .team_grid_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     gap: 1.25rem;
     text-align: center;
@@ -226,12 +321,14 @@ a {
 }
 
 .team_grid_items {
-    width: 100%;
-    background: #ffffff;
-    box-shadow: rgb(0 0 0 / 13%) 4px 0px 19px 0px;
+    width: 90%;
+    box-shadow: 0px 0px 50px var(--secondary-color);
+    -moz-box-shadow: 0 0 50px var(--secondary-color)#fff;
+    -webkit-box-shadow: 0 0 50px var(--secondary-color);
+    box-shadow: 0px 0px 50px var(--secondary-color);
     padding: 2.5rem 1.25rem;
     line-height: 1.25;
-    border-radius: .375rem;
+    border-radius: 4rem;
     justify-content: center;
     margin-bottom: 1rem;
 }
@@ -239,10 +336,11 @@ a {
 .team_grid_items h3 {
     margin-bottom: .75rem;
     line-height: 1.75rem;
+    color: var(--primary-font-color);
 }
 
 .team_grid_items p {
-    color: var(--secondary-color);
+    color: var(--primary-font-color);
     text-transform: none;
 }
 
@@ -262,61 +360,22 @@ i {
     color: var(--secondary-color)
 }
 
+@media (max-width: 80em) {
+    .team_grid_container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+        margin-top: 1.5rem;
+    }
+    .team_grid_items {
+        width: 90%;
+    }
+}
+
 /*////////////\\\\\\\\\\*/
 /*//////////// MOBILE SECTION \\\\\\\\\\*/
 /*////////////\\\\\\\\\\*/
 
-@media (min-width: 50em) {
-    .grid_container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        width: 80%;
-    }
 
-    .header_grid {
-        width: 80%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        justify-items: center;
-        align-content: center;
-        height: 100%;
-        margin: 0 auto;
-        padding: 1em;
-        border-radius: 0.5rem;
-        text-align: center;
-    }
-
-    .header_text {
-        box-shadow: inset 0px 0px 40px 40px #161615;
-        padding: 2em;
-        border-radius: 0.5rem;
-        -webkit-box-shadow: 0px 0px 100px 100px #000000;
-        /* WebKit */
-        -moz-box-shadow: 0px 0px 100px 100px #000000;
-        /* Firefox */
-        box-shadow: 0px 0px 100px 100px #000000;
-        /* Standard */
-        justify-self: start;
-        line-height: 1.5;
-    }
-
-    .header_img {
-        -webkit-box-shadow: 0px 0px 100px 100px #000000;
-        /* WebKit */
-        -moz-box-shadow: 0px 0px 100px 100px #000000;
-        /* Firefox */
-        box-shadow: 0px 0px 100px 100px #000000;
-        /* Standard */
-        justify-self: end;
-        background-image: url(https://imageio.forbes.com/specials-images/imageserve/6170e01f8d7639b95a7f2eeb/Sotheby-s-NFT-Natively-Digital-1-2-sale-Bored-Ape-Yacht-Club--8817-by-Yuga-Labs/0x0.png?fit=bounds&format=png&width=960);
-        background-size: cover;
-        background-position: center;
-        height: 32vh;
-        width: 300px;
-        border-radius: 4px;
-    }
-}
 
 @media (max-width: 50em) {
     .flex_container {
@@ -335,12 +394,15 @@ i {
 }
 
 
+
+
+
 .nft_header {
     display: flex;
     width: 100%;
     justify-content: center;
     margin-bottom: 3rem;
-    
+
 }
 
 .nft_header h1 {
