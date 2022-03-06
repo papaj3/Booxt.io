@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            line-height: 1.5;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .logo {
+            color: #C5A4E0
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            gap: 1rem;
+
+        }
+
+        .nav-items {
+            color: #5C00A9;
+            font-weight: 800;
+            font-size: 1.5rem;
+        }
+
+        .social ul {
+            display: flex;
+            list-style-type: none;
+            gap: .5rem;
+            color: #C5A4E0;
+        }
+
+        .hero-section {
+            height: 93vh;
+            background-image: url(3163.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-top {
+            height: 55vh;
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            align-content: center;
+            background-color: #ffffff;
+        }
+
+        .hero-text {
+            width: 80%;
+            align-self: center;
+            position: relative;
+        }
+
+        .hero-text h1 {
+            color: #5C00A9;
+            font-size: 3.5rem;
+            text-align: right;
+        }
+
+        .hero-text p {
+            text-align: right;
+            color: #C5A4E0;
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+        }
+
+        .btn {
+            padding: .8rem 1.5rem .8rem 1.5rem;
+            border-radius: 100px;
+            text-align: center;
+            box-shadow: 0px 0px 20px 5px #C5A4E0;
+            position: absolute;
+            right: 0;
+            font-weight: 700;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .insperation-text {
+            width: 90%;
+            margin: 0 auto;
+            color:#C5A4E0;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .information {
+            background: #1a1817;
+            height: 50vh
+        }
+
+        
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h3>BOXXT</h3>
+        </div>
+        <nav>
+            <ul>
+                <li class="nav-items">Home</li>
+                <li class="nav-items">About</li>
+                <li class="nav-items">Roadmap</li>
+                <li class="nav-items">Lore</li>
+            </ul>
+        </nav>
+        <div class="social">
+            <ul>
+                <li><i class="fa-brands fa-discord"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fab fa-youtube"></i></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="hero-top">
+                <div class="hero-text">
+                    <h1>Unbox the Metaverse</h1>
+                    <p>Voxels | 2D | 3D</p>
+                    <a href="" class="btn">DISCORD</a>
+                </div>
+                <div class="hero-img">
+                    <img src="evildemon.png" width="600px" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="insperation-text">
+            <h3>We've all fantasized about being astronauts, storm troopers and sex appealing spies.<br /> It's fair to say,
+                if any of us were these we wouldn't be reading this right now.<br /> <span style = "color:#5C00A9">Fulfill your cinematic
+                    dream.</span> You can be anything in the metaverse.</h3>
+                </div>
+        </section>
+        <section>
+            <div class="information">
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
